@@ -14,7 +14,6 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.fooddelivery.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-    Button firstBtn, secondBtn, pindahBtn;
     FrameLayout fragmenContainer;
     ActivityMainBinding binding;
 
@@ -39,32 +38,9 @@ public class MainActivity extends AppCompatActivity {
             return true;
         });
 
-        firstBtn = findViewById(R.id.firstBtn);
-        secondBtn = findViewById(R.id.secondBtn);
         fragmenContainer = findViewById(R.id.fragmentContainer);
-        pindahBtn = findViewById(R.id.pindahBtn);
 
         loadFragment(new FirstFragment());
-        pindahBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, DetailActivity.class));
-            }
-        });
-
-        firstBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                loadFragment(new FirstFragment());
-            }
-        });
-
-        secondBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                loadFragment(new SecondFragment());
-            }
-        });
     }
 
     private void loadFragment(Fragment selectedFragment){

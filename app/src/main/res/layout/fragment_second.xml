@@ -15,7 +15,6 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="18dp"
         android:layout_marginTop="10dp"
-        android:layout_gravity="center"
         android:text="Menu"
         android:textColor="@color/blue"
         android:fontFamily="@font/montserrat_bold"

@@ -10,12 +10,12 @@
         android:label="Delivery App"
         android:roundIcon="@drawable/food_delivery_logo_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FoodDelivery"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
             android:label="Food Delivery"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

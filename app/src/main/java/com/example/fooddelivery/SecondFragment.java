@@ -44,49 +44,46 @@ public class SecondFragment extends Fragment {
 
         menuImage = new int[]{
             R.drawable.burger,
-            R.drawable.burger,
-            R.drawable.burger,
-            R.drawable.burger,
-            R.drawable.burger,
-            R.drawable.burger,
-            R.drawable.burger,
-            R.drawable.burger
+            R.drawable.fried_chicken,
+            R.drawable.pizza,
+            R.drawable.spaghetti,
+            R.drawable.salad,
+            R.drawable.tofu_stew,
+            R.drawable.brownie,
+            R.drawable.smoothie
         };
 
         menuName = new String[]{
             "Beef Burger",
-            "Beef Burger",
-            "Beef Burger",
-            "Beef Burger",
-            "Beef Burger",
-            "Beef Burger",
-            "Beef Burger",
-            "Beef Burger",
-            "Beef Burger"
+            "Fried Chicken",
+            "Pizza",
+            "Spaghetti",
+            "Salad",
+            "Tofu Stew",
+            "Brownie",
+            "Smoothie"
         };
 
         menuDesc = new String[]{
             "Burger with Beef Patty",
-            "Burger with Beef Patty",
-            "Burger with Beef Patty",
-            "Burger with Beef Patty",
-            "Burger with Beef Patty",
-            "Burger with Beef Patty",
-            "Burger with Beef Patty",
-            "Burger with Beef Patty",
-            "Burger with Beef Patty"
+            "Crispy Fried Chicken",
+            "Toppings and Mozarella",
+            "Mushroom Sauce Pasta",
+            "Healthy Vegetables",
+            "Tofu in Spicy Soup",
+            "Sweet Chocolate Dessert",
+            "Fruit & Berry Smoothie"
         };
 
         menuPrice = new  String[]{
             "Rp.40.000",
-            "Rp.40.000",
-            "Rp.40.000",
-            "Rp.40.000",
-            "Rp.40.000",
-            "Rp.40.000",
-            "Rp.40.000",
-            "Rp.40.000",
-            "Rp.40.000"
+            "Rp.30.000",
+            "Rp.80.000",
+            "Rp.35.000",
+            "Rp.20.000",
+            "Rp.30.000",
+            "Rp.15.000",
+            "Rp.25.000"
         };
 
         for (int i = 0; i < menuImage.length; i++){

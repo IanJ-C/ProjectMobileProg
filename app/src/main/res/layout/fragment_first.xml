@@ -1,16 +1,80 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<!-- res/layout/fragment_home.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#9FD1F9"
-    tools:context=".FirstFragment">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!-- ViewPager for sliding food recommendations -->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true" />
+
+    <!-- Indicator for ViewPager -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Home Fragment"
-        android:textSize="30dp"/>
+        android:layout_alignParentBottom="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-</FrameLayout>
+    <!-- res/layout/activity_home.xml -->
+
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        tools:context=".HomeActivity">
+
+        <TextView
+            android:id="@+id/textViewWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Food Delivery App"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/imageViewBanner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/food_icon"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/textViewWelcome"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/buttonBrowseMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Browse Menu"
+            android:layout_below="@id/imageViewBanner"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/buttonOrderHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order History"
+            android:layout_below="@id/buttonBrowseMenu"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/buttonAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Account"
+            android:layout_below="@id/buttonOrderHistory"
+            android:layout_marginTop="8dp" />
+
+
+
+</RelativeLayout>

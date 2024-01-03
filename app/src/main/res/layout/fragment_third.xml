@@ -66,7 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="142dp"
             android:layout_marginTop="61dp"
-            android:text="daniel.user@email.com"
+            android:text="daniel@email.com"
             android:textColor="@color/white"
             android:fontFamily="@font/montserrat_regular"
             android:textSize="18sp"/>
@@ -121,58 +121,44 @@
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginStart="123dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="128dp"
             app:srcCompat="@drawable/dollar"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:layout_marginStart="75dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="95dp"
             android:text="Rp.100.000"
-            android:textSize="30sp"
+            android:textSize="26sp"
             android:textColor="@color/blue"
             android:fontFamily="@font/montserrat_semibold"/>
 
     </com.google.android.material.card.MaterialCardView>
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/topup"
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="115dp"
         android:layout_height="115dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         app:layout_constraintTop_toBottomOf="@id/profile_card"
         app:layout_constraintStart_toEndOf="@id/balance"
         app:layout_constraintEnd_toEndOf="parent"
-        app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="10dp"
-        app:strokeColor="@color/blue"
-        app:strokeWidth="1dp">
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="27.5dp"
-            app:srcCompat="@drawable/add_icon"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="64dp"
-            android:layout_marginStart="10dp"
-            android:text="Top Up"
-            android:textSize="26sp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:textColor="@color/blue"/>
-
-    </com.google.android.material.card.MaterialCardView>
+        android:background="@drawable/topup_button"
+        android:drawableTop="@drawable/add_icon"
+        android:textAllCaps="false"
+        android:text="Top Up"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="24sp">
+    </androidx.appcompat.widget.AppCompatButton>
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="380dp"
-        android:layout_height="320dp"
+        android:layout_height="300dp"
         android:layout_marginTop="15dp"
         app:layout_constraintTop_toBottomOf="@id/balance"
         app:layout_constraintStart_toStartOf="parent"
@@ -184,11 +170,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginStart="15dp"
-            android:text="Your Location"
+            android:layout_gravity="center_horizontal"
+            android:text="Delivery Location"
             android:textSize="26sp"
             android:textColor="@color/white"
             android:fontFamily="@font/montserrat_semibold"/>
+
+        <FrameLayout
+            android:id="@+id/mapContainer"
+            android:layout_width="350dp"
+            android:layout_height="235dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"/>
 
     </com.google.android.material.card.MaterialCardView>
 

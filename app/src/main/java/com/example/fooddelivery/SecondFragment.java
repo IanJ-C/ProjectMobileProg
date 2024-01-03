@@ -55,7 +55,7 @@ public class SecondFragment extends Fragment {
 
         menuName = new String[]{
             "Beef Burger",
-            "Fried Chicken",
+            "Chicken",
             "Pizza",
             "Spaghetti",
             "Salad",

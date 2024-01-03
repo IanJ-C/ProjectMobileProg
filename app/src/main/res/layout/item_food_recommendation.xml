@@ -1,0 +1,26 @@
+<!-- res/layout/item_food_recommendation.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageFood"
+        android:layout_width="wrap_content"
+        android:layout_height="322dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/salad" />
+
+    <TextView
+        android:id="@+id/textFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Today's Recommendation"
+        android:textSize="18sp"/>
+
+
+
+</LinearLayout>
